@@ -288,49 +288,47 @@ function sendYesEmail(){
 
 if(yesBtn){
 
-yesBtn.onclick = function(){
+    yesBtn.onclick = function(){
 
 
-    sendYesEmail();
+        sendYesEmail();
 
 
-    showPage(5);
+        showPage(5);
 
 
-};
+
+        yesMessage.innerHTML = `
 
 
-    yesMessage.innerHTML = `
+        <p>
+
+        Love You Babe ❤️
+
+        <br><br>
+
+        You made my heart smile. 💖
+
+        <br><br>
+
+        I am really happy.
+
+        <br><br>
+
+        Thank you for being special.
+
+        ❤️
+
+        </p>
 
 
-    <p>
-
-    Love You Babe ❤️
-
-    <br><br>
-
-    You made my heart smile. 💖
-
-    <br><br>
-
-    I am really happy.
-
-    <br><br>
-
-    Thank you for being special.
-
-    ❤️
-
-    </p>
+        `;
 
 
-    `;
+        createHeartRain();
 
 
-    createHeartRain();
-
-
-};
+    };
 
 }
 
