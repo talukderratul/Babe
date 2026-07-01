@@ -1,3 +1,10 @@
+(function(){
+
+    emailjs.init({
+        publicKey: "0o3_DHIR9u06LlZsW"
+    });
+
+})();
 /* ===========================================
    ELEMENTS
 =========================================== */
@@ -245,7 +252,34 @@ next4.onclick = function(){
 };
 
 }
+function sendYesEmail(){
 
+
+    let currentTime = new Date().toLocaleString();
+
+
+    emailjs.send(
+        "service_wzu2xht",
+        "template_hvvd3y1",
+        {
+            time: currentTime
+        }
+    )
+
+    .then(function(){
+
+        console.log("Email sent successfully ❤️");
+
+    })
+
+    .catch(function(error){
+
+        console.log("Email failed:", error);
+
+    });
+
+
+}
 
 
 
@@ -261,7 +295,13 @@ if(yesBtn){
 yesBtn.onclick = function(){
 
 
+    sendYesEmail();
+
+
     showPage(5);
+
+
+};
 
 
     yesMessage.innerHTML = `
