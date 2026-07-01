@@ -58,13 +58,10 @@ function showPage(index){
     });
 
 
-    if(pages[index]){
-
-        pages[index].classList.remove("hidden");
-
-    }
+    pages[index].classList.remove("hidden");
 
 }
+
 
 
 
@@ -122,7 +119,6 @@ next1.onclick = function(){
 
 
     showPage(1);
-
 
 
     typeWriter(
