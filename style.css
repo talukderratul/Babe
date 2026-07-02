@@ -713,6 +713,10 @@ button:hover::before{
     }
 
 }
+.bangla{
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 700;
+}
 
 
 /* ===========================================
